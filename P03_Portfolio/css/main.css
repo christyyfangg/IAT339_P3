@@ -54,7 +54,7 @@ a:hover {
 }
 
 p{
-  width: 80%;
+  width: 100%;
 }
 
 code {
@@ -85,7 +85,7 @@ h2:hover {
 }
 
 h3 {
-  margin-top: 0.25rem;
+  margin-top: 3rem;
   color: #FD5693;
 }
 
@@ -120,6 +120,14 @@ footer{
 .button:hover, .button:focus {
   background-color: #FD5693;
   color: white;
+}
+
+/*  This portion of code is drawn from www.w3schools.com/howto/howto_css_center_button.asp */
+.center {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Styling for nav-bar */
@@ -229,11 +237,22 @@ img{
   FLEX BOX-------------------
 */
 
-.box-wrap{
+.box-wrap-horizontal{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
   flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.box-wrap-vertical{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+  flex-direction: column;
 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -310,7 +329,7 @@ img{
 
 .banner-img1{
   width:100%;
-  max-width:25em;
+  max-width:20em;
 }
 
 .banner-img2{
@@ -324,8 +343,17 @@ img{
 }
 
 /* Process Analysis banner */
+.prototype-img{
+  width:100%;
+  max-width:40em;
+}
 
 .intext-img{
   width:100%;
-  max-width:15em;
+  max-width:25em;
+}
+
+.intext-img-wide{
+  width:100%;
+  max-width:60em;
 }
