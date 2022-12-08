@@ -26,7 +26,7 @@ section {
   margin-bottom: 3rem;
 }
 
-#bio{
+#bio, #contact{
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
@@ -91,6 +91,10 @@ h3 {
 
 h4 {
   margin-bottom: 0.5rem;
+}
+
+footer{
+  text-align: center;
 }
 
 
@@ -263,6 +267,29 @@ img{
   background-color: #CFCFCF;
 }
 
+/* Text boxes in contact */
+.box-text{
+	-webkit-flex: 1 1 10em;
+	-ms-flex: 1 1 10em;
+	flex: 1 1 10em;
+  padding: 1em;
+  border-radius: 110px;
+  background-color: white;
+  border: 0.25px solid black;
+}
+
+.box-text:nth-of-type(1) {
+  background-color: #FD5693;
+}
+
+.box-text:nth-of-type(2) {
+  background-color: #D8EDF0;
+}
+
+.box-text:nth-of-type(3) {
+  background-color: #CFCFCF;
+}
+
 /* Project Overview box */
 
 .box-item{
@@ -271,6 +298,8 @@ img{
   flex: 1 1 16em;
   margin: 0.5em;
 }
+
+
 
 .banner{
   display: flex;
