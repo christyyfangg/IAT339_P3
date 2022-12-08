@@ -45,7 +45,7 @@ nav a:hover, nav a:focus {
 
 /* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors*/
 a:hover {
-  color: #FD5693;
+  background-color: #D8EDF0;
 }
 
 p{
@@ -73,6 +73,7 @@ h2 {
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.75px;
   -webkit-text-stroke-color: black;
+  text-align: center;
 }
 
 h3 {
@@ -175,7 +176,7 @@ h4 {
 .button-nav:hover:not(.active){
   background-color: #FD5693;
   color: white;
-  border-radius: 100em;
+  border-radius: 10em;
 }
 
 .logo-img{
@@ -247,11 +248,11 @@ img{
 }
 
 .box-color:nth-of-type(3) {
-  background-color: #CFCFCF;
+  background-color: #D8EDF0;
 }
 
 .box-color:nth-of-type(4) {
-  background-color: #D8EDF0;
+  background-color: #CFCFCF;
 }
 
 /* Project Overview box */
