@@ -122,14 +122,6 @@ footer{
   color: white;
 }
 
-/*  This portion of code is drawn from www.w3schools.com/howto/howto_css_center_button.asp */
-.center {
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 /* Styling for nav-bar adapted from P02*/
 .nav-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -174,10 +166,6 @@ footer{
   .navbar{
     flex-wrap:wrap;
   }
-  .button-nav:last-of-type{
-    margin-left:0;
-    margin-right: auto;
-  }
 }
 
 .button-nav{
@@ -187,10 +175,6 @@ footer{
   text-align: center;
   padding: 1em;
   text-decoration: none;
-}
-
-.button-nav:last-of-type{
-  margin-left:auto;
 }
 
 .button-nav:hover:not(.active){
@@ -287,6 +271,17 @@ img{
 }
 
 /* Text boxes in contact */
+.box-link{
+	-webkit-flex: 1 1 10em;
+	-ms-flex: 1 1 10em;
+	flex: 1 1 10em;
+  padding: 1em;
+  border-radius: 110px;
+  background-color: white;
+  border: 0.25px solid black;
+}
+
+/* Text boxes in interest */
 .box-text{
 	-webkit-flex: 1 1 10em;
 	-ms-flex: 1 1 10em;
