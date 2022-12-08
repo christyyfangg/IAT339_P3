@@ -15,19 +15,16 @@
   <body>
 
     <header>
-
-      <div class="nav-box">
-        <div class="nav-box nav-title">
-          <h1>CF Portfolio <a href="/index.html"><img class="logo-img" src="../img/self-portrait-black.png" alt="Christy Fang Self Portrait"></a> Style Guide</h1>
-        </div>
+      <div class="nav-box nav-title">
+        <a href="index.html"><img class="logo-img" src="../img/self-portrait-black.png" alt="Christy Fang Self Portrait"></a>
+      </div>
 
         <!-- NAVIGATION BAR // -->
+      <div class="nav-box">
         <nav class="navbar">
           <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
           <a class="button-nav" href="#text_elements">Text Elements</a>
           <a class="button-nav" href="#combined_elements">Combined Elements</a>
-          <a class="button-nav" href="../html/project_overview.html">Project Overview Template</a>
-          <a class="button-nav" href="../html/process_analysis.html">Process Analysis Template</a>
           <a class="button-nav" href="#citations">*Citations*</a>
         </nav>
       </div>
@@ -233,10 +230,10 @@
 
         <h4>Code:</h4>
         <code>
-          &lt;h2>Heading 1&lt;/h2><br>
-          &lt;h3>Heading 2&lt;/h3><br>
-          &lt;h4>Heading 3&lt;/h4><br>
-          &lt;h5>Heading 4&lt;/h5>
+          &lt;h1>Heading 1&lt;/h1><br>
+          &lt;h2>Heading 2&lt;/h2><br>
+          &lt;h3>Heading 3&lt;/h3><br>
+          &lt;h4>Heading 4&lt;/h4>
         </code>
 
       </section>
@@ -316,13 +313,14 @@
         <h3>Main Navigation</h3>
 
         <h4>Rendered example:</h4><br>
-        <nav class="navbar">
-          <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
-          <a class="button-nav" href="#text_elements">Text Elements</a>
-          <a class="button-nav" href="#combined_elements">Combined Elements</a>
-          <a class="button-nav" href="html/project_overview.html">Project Overview Template</a>
-          <a class="button-nav" href="html/process_analysis.html">Process Analysis Template</a>
-        </nav>
+        <div class="nav-box">
+          <nav class="navbar">
+            <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+            <a class="button-nav" href="#text_elements">Text Elements</a>
+            <a class="button-nav" href="#combined_elements">Combined Elements</a>
+            <a class="button-nav" href="#citations">*Citations*</a>
+          </nav>
+        </div>
 
         <h4>CSS selector:</h4>
         <p>
@@ -334,12 +332,14 @@
 
         <h4>Code:</h4>
         <code>
-          &lt;nav class="navbar"><br>
-            &lt;a class="button-nav" href="#interactive_elements">Interactive Elements&lt;/a><br>
-            &lt;a class="button-nav" href="#text_elements">Text Elements&lt;/a><br>
-            &lt;a class="button-nav" href="#combined_elements">Combined Elements&lt;/a><br>
-            &lt;a class="button-nav" href="html/project_overview.html">Project Overview Template&lt;/a><br>
-          &lt;/nav>
+          &lt;div class="nav-box"><br>
+            &lt;nav class="navbar"><br>
+              &lt;a class="button-nav" href="#interactive_elements">Interactive Elements&lt;/a><br>
+              &lt;a class="button-nav" href="#text_elements">Text Elements&lt;/a><br>
+              &lt;a class="button-nav" href="#combined_elements">Combined Elements&lt;/a><br>
+              &lt;a class="button-nav" href="#citations">*Citations*&lt;/a><br>
+            &lt;/nav><br>
+          &lt;/div>
         </code>
 
       </section>
