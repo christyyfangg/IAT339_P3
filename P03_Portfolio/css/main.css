@@ -26,7 +26,7 @@ section {
   margin-bottom: 3rem;
 }
 
-#bio, #contact{
+#bio, #interest, #contact{
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
@@ -44,9 +44,6 @@ nav a {
   text-align: center;
 }
 
-nav a:hover, nav a:focus {
-  color: #FD5693;
-}
 
 /* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors*/
 a:hover {
@@ -372,7 +369,7 @@ img{
     border: 0.25px solid black;
   }
 
-  #bio, #contact{
+  #bio, #interest, #contact{
     margin-top: 5rem;
     margin-bottom: 5rem;
   }

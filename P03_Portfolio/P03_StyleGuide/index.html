@@ -184,18 +184,21 @@
 
         <!-- This portion of code is drawn from www.w3schools.com/html/html_links -->
         <h4>Rendered example:</h4><br>
-        <a href="https://www.linkedin.com/in/christy-fang">
-          <img src="../img/self-portrait-black.png" alt="Christy Fang Self Portrait" style="width:20%">
-        </a>
+        <div class="banner">
+          <a href="https://www.figma.com/proto/4uBSk4GsEVa5dvUhagtHst/NOF-Web-Final?node-id=249%3A2173&scaling=contain&page-id=0%3A1&starting-point-node-id=249%3A2173"><img class="prototype-img" src="../img/project1.png" alt="NOF Website Design"></a>
+        </div>
 
         <h4>CSS selector:</h4>
-        <p>img:hover</p>
+        <p>
+          img:hover
+          .banner
+        </p>
 
         <h4>Code:</h4>
         <code>
-          &lt;a href="https://www.linkedin.com/in/christy-fang"><br>
-            &lt;img src="img/self-portrait-black.png" alt="Christy Fang Self Portrait"><br>
-          &lt;/a>
+          &lt;div class="banner">
+            &lt;a href="https://www.figma.com/proto/4uBSk4GsEVa5dvUhagtHst/NOF-Web-Final?node-id=249%3A2173&scaling=contain&page-id=0%3A1&starting-point-node-id=249%3A2173">&lt;img class="prototype-img" src="../img/project1.png" alt="NOF Website Design">&lt;/a>
+          &lt;/div>
         </code>
 
       </section>
@@ -345,12 +348,107 @@
       </section>
 
       <section class="element">
+
+        <h3>Taged Titles</h3>
+
+        <h4>Rendered example:</h4><br>
+        <div class="box-wrap-horizontal">
+          <div class="box-text">
+            <button class="button">UX Designer</button>
+          </div>
+          <div class="box-text">
+            <button class="button">UI Designer</button>
+          </div>
+          <div class="box-text">
+            <button class="button">Visual Designer</button>
+          </div>
+        </div>
+
+        <h4>CSS selector:</h4>
+        <p>
+          .box-wrap-horizontal<br>
+          .box-link<br>
+          .button
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;div class="box-wrap-horizontal"><br>
+            &lt;div class="box-text"><br>
+              &lt;button class="button">UX Designer&lt;/button><br>
+            &lt;/div><br>
+            &lt;div class="box-text"><br>
+              &lt;button class="button">UI Designer&lt;/button><br>
+            &lt;/div><br>
+            &lt;div class="box-text"><br>
+              &lt;button class="button">Visual Designer&lt;/button><br>
+            &lt;/div><br>
+          &lt;/div>
+        </code>
+
+      </section>
+
+      <section class="element">
+
+        <h3>Navigation Buttons</h3>
+
+        <h4>Rendered example:</h4><br>
+        <div class="box-wrap-horizontal">
+          <div class="box-link">
+            <form action="https://mail.google.com/">
+            <button class="button">christy0615@outlook.com</button>
+            </form>
+          </div>
+          <div class="box-link">
+            <form action="https://www.linkedin.com/in/christy-fang">
+            <button class="button">Linkedin</button>
+            </form>
+          </div>
+          <div class="box-link">
+            <form action="https://docs.google.com/document/d/1CRF5uv6HWdlY4rqhCBL-5y2_BCyLir_9zDvSFi7Msog/edit?usp=sharing">
+            <button class="button">Resume</button>
+            </form>
+          </div>
+        </div>
+
+        <h4>CSS selector:</h4>
+        <p>
+          .box-wrap-horizontal<br>
+          .box-link<br>
+          .button<br>
+          form
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;div class="box-wrap-horizontal"><br>
+            &lt;div class="box-link"><br>
+              &lt;form action="https://mail.google.com/"><br>
+              &lt;button class="button">christy0615@outlook.com&lt;/button><br>
+              &lt;/form><br>
+            &lt;/div><br>
+            &lt;div class="box-link"><br>
+              &lt;form action="https://www.linkedin.com/in/christy-fang"><br>
+              &lt;button class="button">Linkedin&lt;/button><br>
+              &lt;/form><br>
+            &lt;/div><br>
+            &lt;div class="box-link"><br>
+              &lt;form action="https://docs.google.com/document/d/1CRF5uv6HWdlY4rqhCBL-5y2_BCyLir_9zDvSFi7Msog/edit?usp=sharing"><br>
+              &lt;button class="button">Resume&lt;/button><br>
+              &lt;/form><br>
+            &lt;/div><br>
+          &lt;/div>
+        </code>
+
+      </section>
+
+      <section class="element">
         <h3>Project Overview</h3>
 
         <h4>Rendered example:</h4>
 
         <section class="element">
-          <div class="box-wrap">
+          <div class="box-wrap-horizontal">
           <div class="box-item">
           <div class="banner">
             <img class="banner-img1" src="../img/project1.png" alt="NOF Website Design">
@@ -375,7 +473,7 @@
         <h4>Code:</h4>
         <code>
           &lt;section class="element"><br>
-          &lt;div class="box-wrap"><br>
+          &lt;div class="box-wrap-horizontal"><br>
           &lt;div class="box-item"><br>
           &lt;div class="banner"><br>
             &lt;img class="banner-img1" src="img/project1.png" alt="NOF Website Design"><br>
@@ -385,6 +483,52 @@
             &lt;h3>NOF Microsite&lt;/h3>
             &lt;p>A microsite for the Switzerland based performing art organization Novel Opera Fribourg (NOF) with an expectation to combine the visual style of the company with Dan Friedman’s.&lt;/p><br>
             &lt;/div><br>
+            &lt;/div><br>
+          &lt;/section>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Prototype</h3>
+
+        <h4>Rendered example:</h4>
+
+        <section>
+          <div class="banner">
+            <a href="https://www.figma.com/proto/4uBSk4GsEVa5dvUhagtHst/NOF-Web-Final?node-id=249%3A2173&scaling=contain&page-id=0%3A1&starting-point-node-id=249%3A2173"><img class="prototype-img" src="../img/project1.png" alt="NOF Website Design"></a>
+          </div>
+        </section>
+
+        <section>
+          <div class="banner">
+          <form action="https://www.figma.com/proto/4uBSk4GsEVa5dvUhagtHst/NOF-Web-Final?node-id=249%3A2173&scaling=contain&page-id=0%3A1&starting-point-node-id=249%3A2173">
+            <button class="button">Test Prototype</button>
+          </form>
+          </div>
+        </section>
+
+        <h4>CSS selector:</h4>
+        <p>
+          img:hover<br>
+          .banner<br>
+          .button<br>
+          .button:hover, .button:focus
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;section><br>
+            &lt;div class="banner"><br>
+              &lt;a href="https://www.figma.com/proto/4uBSk4GsEVa5dvUhagtHst/NOF-Web-Final?node-id=249%3A2173&scaling=contain&page-id=0%3A1&starting-point-node-id=249%3A2173">&lt;img class="prototype-img" src="../img/project1.png" alt="NOF Website Design">&lt;/a><br>
+            &lt;/div><br>
+          &lt;/section><br>
+
+          &lt;section><br>
+            &lt;div class="banner"><br>
+            &lt;form action="https://www.figma.com/proto/4uBSk4GsEVa5dvUhagtHst/NOF-Web-Final?node-id=249%3A2173&scaling=contain&page-id=0%3A1&starting-point-node-id=249%3A2173"><br>
+              &lt;button class="button">Test Prototype&lt;/button><br>
+            &lt;/form><br>
             &lt;/div><br>
           &lt;/section>
         </code>
