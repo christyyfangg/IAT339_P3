@@ -130,7 +130,7 @@ footer{
   transform: translate(-50%, -50%);
 }
 
-/* Styling for nav-bar */
+/* Styling for nav-bar adapted from P02*/
 .nav-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -170,7 +170,7 @@ footer{
 }
 
 /* Adjusts the navigation bar when the screen gets too small */
-@media(max-width:45em){
+@media(max-width:465em){
   .navbar{
     flex-wrap:wrap;
   }
@@ -356,4 +356,30 @@ img{
 .intext-img-wide{
   width:100%;
   max-width:60em;
+}
+
+/* Adjust margin and padding when the screen gets too small */
+@media(max-width:65em){
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .element {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10em;
+    background-color: white;
+    border: 0.25px solid black;
+  }
+
+  #bio, #contact{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
 }
